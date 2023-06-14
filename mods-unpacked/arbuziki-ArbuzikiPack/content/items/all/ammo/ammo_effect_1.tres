@@ -5,7 +5,7 @@
 [resource]
 script = ExtResource( 1 )
 key = "shop_slot_size"
-text_key = "effect_shop_slot_size"
+text_key = "EFFECT_SHOP_SLOT_SIZE_ADD"
 value = 2
 custom_key = ""
 storage_method = 0
