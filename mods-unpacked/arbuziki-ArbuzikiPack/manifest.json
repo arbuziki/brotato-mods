@@ -1,0 +1,19 @@
+{
+    "name": "ArbuzikiPack",
+    "namespace": "arbuziki",
+    "version_number": "1.0.0",
+    "description": "New characters, new items, new weapons and a lot more!",
+    "website_url": "https://github.com/arbuziki/brotato-mods",
+    "dependencies": [
+		"Darkly77-ContentLoader"
+	],
+    "extra": {
+        "godot": {
+            "incompatibilities": [],
+			"authors": ["arbuziki"],
+			"compatible_mod_loader_version": "3.0.0",
+			"compatible_game_version": ["0.8.0.3"],
+			"config_defaults": {}
+        }
+    }
+}

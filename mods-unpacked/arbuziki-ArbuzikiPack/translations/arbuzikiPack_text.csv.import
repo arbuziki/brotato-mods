@@ -1,0 +1,16 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+
+[deps]
+
+files=[ "res://mods-unpacked/arbuziki-ArbuzikiPack/translations/arbuzikiPack_text.en.translation", "res://mods-unpacked/arbuziki-ArbuzikiPack/translations/arbuzikiPack_text.ru.translation" ]
+
+source_file="res://mods-unpacked/arbuziki-ArbuzikiPack/translations/arbuzikiPack_text.csv"
+dest_files=[ "res://mods-unpacked/arbuziki-ArbuzikiPack/translations/arbuzikiPack_text.en.translation", "res://mods-unpacked/arbuziki-ArbuzikiPack/translations/arbuzikiPack_text.ru.translation" ]
+
+[params]
+
+compress=true
+delimiter=0

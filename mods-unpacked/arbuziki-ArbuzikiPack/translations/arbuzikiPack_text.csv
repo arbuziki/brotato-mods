@@ -1,0 +1,6 @@
+keys,en,ru
+CHARACTER_COMMANDO,Commando,Коммандо
+EFFECT_SHOP_SLOT_SIZE,Shop has {0} slots,В магазине {0} слотов
+REROLL_PRICE,{0}% Reroll Price,{0}% к цене реролла
+EFFECT_DESTROY_ITEMS,All of your items are destroyed at the end of a wave,Все ваши предметы уничтожаются в конце волны
+ITEM_AMMO,Gives you {0} additional slots at the shop,Дает {0} дополнительных слотов в магазине
