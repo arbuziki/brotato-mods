@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://entities/units/player/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://entities/birth/entity_birth.tscn" type="PackedScene" id=2]
+[ext_resource path="res://mods-unpacked/arbuziki-ArbuzikiPack/content/global/closer_enemy_spawner.gd" type="Script" id=3]
+
+[node name="CloserEntitySpawner" type="Node2D"]
+script = ExtResource( 3 )
+player_scene = ExtResource( 1 )
+entity_birth_scene = ExtResource( 2 )
+
+[node name="StructureTimer" type="Timer" parent="."]
+
+[connection signal="timeout" from="StructureTimer" to="." method="_on_StructureTimer_timeout"]
