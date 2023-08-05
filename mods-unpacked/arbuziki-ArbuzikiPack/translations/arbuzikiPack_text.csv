@@ -1,7 +1,12 @@
 keys,en,ru
 CHARACTER_COMMANDO,Commando,Коммандо
+CHARACTER_CHUCK,Chuck,Чак
 REROLL_PRICE,{0}% Reroll Price,{0}% к цене реролла
 EFFECT_DESTROY_ITEMS,All of your items are destroyed at the end of a wave,Все ваши предметы уничтожаются в конце волны
 ITEM_AMMO,Ammo supply,Поставки оружия
 EFFECT_SHOP_SLOT_SIZE,Shop has {0} slots,В магазине {0} слотов
 EFFECT_SHOP_SLOT_SIZE_ADD,Shop has {0} additional slots,В магазине {0} дополнительных слота
+EFFECT_FLEEING_ENEMIES,Enemies are fleeing in panic,Враги спасаются бегством
+EFFECT_ENEMY_ESCAPED_PENALTY,"If an enemy manages to escape, you take damage","Если врагу удастся сбежать, вы получите урон"
+EFFECT_CLOSER_ENEMY_SPAWNER,Enemies spawn closer to the center of the map,Враги появляются ближе к центру карты
+EFFECT_TWO_WEAPON_SLOT_LIMIT,You can only equip 2 weapons at a time,"У вас может быть не более 2 оружий"

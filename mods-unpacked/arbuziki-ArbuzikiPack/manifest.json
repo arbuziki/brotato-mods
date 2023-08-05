@@ -11,7 +11,7 @@
         "godot": {
             "incompatibilities": [],
 			"authors": ["arbuziki"],
-			"compatible_mod_loader_version": "3.0.0",
+			"compatible_mod_loader_version": ["4.1.0"],
 			"compatible_game_version": ["0.8.0.3"],
 			"config_defaults": {}
         }
