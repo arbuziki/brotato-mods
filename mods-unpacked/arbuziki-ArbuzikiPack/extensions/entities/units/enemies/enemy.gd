@@ -9,13 +9,12 @@ const run_away_behaviors: Dictionary = {
 		"res://mods-unpacked/arbuziki-ArbuzikiPack/content/entities/units/enemies/attack_behaviors/charging_running_away_behavior.gd"
 }
 
+signal escaped(enemy)
+
 var isEscaping:bool = false
 
 func _ready()->void:
-	
-	if RunData.effects["fleeing_enemies"]:
-		checkAndReplaceBehavior(_movement_behavior)
-		checkAndReplaceBehavior(_attack_behavior)
+	initFleeingBehaviors()
 	
 func _physics_process(delta:float)->void :
 	if dead:
@@ -26,6 +25,11 @@ func _physics_process(delta:float)->void :
 		checkIfEnemyTriesToEscape()
 	
 	._physics_process(delta)
+	
+func initFleeingBehaviors()->void:
+	if RunData.effects["fleeing_enemies"]:
+		checkAndReplaceBehavior(_movement_behavior)
+		checkAndReplaceBehavior(_attack_behavior)
 			
 func checkAndReplaceBehavior(object: Object)->void:
 	var script = object.get_script()
@@ -57,6 +61,8 @@ func checkIfEnemyTriesToEscape()->void:
 			var dmg = max_stats.damage + (max_stats.damage * Utils.get_stat("enemy_damage") / 100.0);
 			var dmg_wave = dmg + dmg * (RunData.current_wave * 300.0 / 20.0) / 100.0
 			player_ref.take_damage(dmg_wave, null, false, false, null, 1.0, true)
+			
+			emit_signal("escaped", self)
 			
 			can_drop_loot = false
 			die()

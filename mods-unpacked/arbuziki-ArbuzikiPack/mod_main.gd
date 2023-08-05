@@ -12,7 +12,9 @@ const script_extensions := [
 	"singletons/run_data.gd",
 	"singletons/item_service.gd",
 	"ui/menus/pages/main_menu.gd",
-	"entities/units/enemies/enemy.gd"
+	"entities/units/enemies/enemy.gd",
+	"entities/units/enemies/boss/boss.gd",
+	"visual_effects/floating_text/floating_text_manager.gd"
 ]
 
 const translations := [

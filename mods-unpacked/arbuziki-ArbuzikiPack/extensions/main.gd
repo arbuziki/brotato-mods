@@ -41,3 +41,7 @@ func _on_EntitySpawner_player_spawned(player:Player)->void:
 		_player.queue_free()
 		
 	._on_EntitySpawner_player_spawned(player)
+	
+func connect_visual_effects(unit:Unit)->void:
+	.connect_visual_effects(unit)
+	var _error_floating_text = unit.connect("escaped", _floating_text_manager, "_on_unit_escaped")
